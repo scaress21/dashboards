@@ -62,7 +62,7 @@ bar = px.bar(mu, y = list(mu.groupby('museum_type')[['museum_type', 'museum_id']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(style={'backgroundColor': colors['background'], 'textAlign' : 'center'}, children = [
-    html.Img(src= 'https://github.com/scaress21/dashboards/blob/master/museums/assets/United%20states%20of%20Museums.png?raw=True', alt = 'Header Image',
+    html.Img(src= 'https://github.com/scaress21/dashboards/blob/master/museums/assets/header_image.png?raw=True', alt = 'Header Image',
     style={
                 'height': '50%',
                 'width': '50%'
