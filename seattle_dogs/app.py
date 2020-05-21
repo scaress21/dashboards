@@ -9,8 +9,6 @@ from plotly.subplots import make_subplots
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 all_pets = pd.read_csv('./data/clean_pet_data.csv')
-dogs = pd.read_csv('./data/dog_breeds.csv')
-cats = pd.read_csv('./data/cat_breeds.csv')
 
 #First figure, barchart with dropdown
 names = go.Figure()
@@ -381,7 +379,7 @@ fig3.update_layout(
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.layout = html.Div(style={'backgroundColor': 'snow', 'textAlign' : 'center'}, children = [
-    html.Img(src= 'https://github.com/scaress21/dashboards/blob/master/museums/assets/header_image.png?raw=True', alt = 'Header Image',
+    html.Img(src= 'https://github.com/scaress21/dashboards/blob/master/seattle_dogs/header.png?raw=True', alt = 'Header Image',
     style={
                 'height': '50%',
                 'width': '50%',
